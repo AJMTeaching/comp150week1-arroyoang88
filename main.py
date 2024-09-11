@@ -1,25 +1,62 @@
 # ------------------------------------------------------------------------
 
-# Lab 1
-# Problem 1
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
+### Lab Exercise 1: Lists in Python
+#creating my_list
+1. Create a list called my_list with the values [1, 5, 'apple', 20.5].
+2. Using indexing, print the value 'apple' from my_list.
+3. Add the value 10 to the end of my_list using the append() method. Print the updated list.
+4. Remove the value 20.5 from my_list using the remove() method. Print the updated list.
+5. Reverse the order of the elements in my_list using a method. Print the reversed list.
+
+my_list = [1, 5, 'apple', 20.5]
+print(my_list[apple])
+    'apple'
+def add_elements((lst: list[int]) -> list[int]:)
+1st.append(10)
+[1, 5, 'apple', 20.5, 10]
+remove_elements(lst: list[int]) -> list[int]:
+1st.remove(20.5)
+print(my_list)
+my_list = [1, 5, apple, 10]
+1st.reverse( [1, 5, apple, 10] )
 
 # Problem 2
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
-
+1. Create a dictionary called person with keys 'name', 'age', 'job' and values 'John', 30, 'teacher'.
+2. Print the value corresponding to the 'job' key.
+3. Add a new key-value pair: 'city': 'Paris' to the person dictionary. Print the updated dictionary.
+4. Remove the 'age' key-value pair from person. Print the updated dictionary.
+5. Iterate through the person dictionary and print out each key-value pair on a separate line.
+dict[str, int]:
+dict(name=John,age=30,job=teacher)
+dict[key]=value
+def print[key(job)]
+def print[key(job)= teacher
+def remove_key=dict[str, int]:
+    del dict[age]
+dict(name)
+dict(name)=John
+dict(age)
+dict(age)=30
+dict(job)
+NameError: name 'job' is not defined
 # -----------------------------------------------------------------------------
 
 
 # Importing sys for test function
 import sys
+my_list=(1,2,3)
+def test_remove_elements(my_list):
+my_list.assertEqual(add_elements([1,2,3]))
 
 
 # Custom Test Function
-def test(did_pass):
+def test(did_pass):'FAILED'
     """ Print the result of a test. """
-    linenum = sys._getframe(1).f_lineno  # Get the caller's line number.
+    linenum = sys._getframe(1).f_lineno 
+      # Get the caller's line number.
     msg = f"Test at line {linenum} {'PASSED' if did_pass else 'FAILED'}."
     print(msg)
+    'FAILED'
 
 
 # Function 1: count_vowels
@@ -49,6 +86,9 @@ def test_count_vowels():
     test(count_vowels("aEiOu") == 5)
     test(count_vowels("a e i o u") == 5)
     test(count_vowels("rhythm") == 0)
+    test(count_vowels(house) == 2)
+    test(count_vowels(computer) == 2)
+    test(count_vowels(a,i,o) == 3)
 
 
 # Function 2: merge_lists
@@ -82,17 +122,20 @@ def test_merge_lists():
     test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
 
+    def test_merge_list():
+    list1 = [10, 20, 30]
+    list2 = [40, 50, 60]
+merged = merge_list(list1, list2)
+test(merged == [10, 20, 30, 40, 50, 60])
 
 # Function 3: word_lengths
-def word_lengths(words: list) -> list:
-    """
-    Get the lengths of words in a list.
-
-    Parameters:
-    - words (list): The list of words
-
-    Returns:
-    - list: A list containing the lengths of the words
+def test_word_lengths():
+    words = [goodbye, tall, people]
+     lengths = word_lengths(words)
+    test(lengths == [7, 4, 6])
+    test(word_lengths([]) == [])
+    test(word_lengths(["tall"]) == [4])
+    
     """
     # TODO: Implement this function
     pass
@@ -105,7 +148,7 @@ def test_word_lengths():
     test(lengths == [5, 5, 6])
     test(word_lengths([]) == [])
     test(word_lengths(["word"]) == [4])
-    test(word_lengths(["short", "mediummm", "longesttttt"]) == [5, 8, 10])
+    test(word_lengths(["short", "mediummm", "longesttttt"]) == [5, 8, 11])
     test(word_lengths(["", "a", "ab", "abc"]) == [0, 1, 2, 3])
     test(word_lengths(["  ", "a b", " c "]) == [2, 3, 3])
 
