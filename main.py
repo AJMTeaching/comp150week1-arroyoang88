@@ -9,28 +9,26 @@
 5. Reverse the order of the elements in my_list using a method. Print the reversed list.
 
 my_list = [1, 5, 'apple', 20.5]
-print(my_list[apple])
-    'apple'
-def add_elements((lst: list[int]) -> list[int]:)
-1st.append(10)
-[1, 5, 'apple', 20.5, 10]
-remove_elements(lst: list[int]) -> list[int]:
-1st.remove(20.5)
+print(my_list[2])
+my_list.append(10)
 print(my_list)
-my_list = [1, 5, apple, 10]
-1st.reverse( [1, 5, apple, 10] )
+my_list.remove(20.5)
+print(my_list)
+reversed(my_list)
+
 
 # Problem 2
 1. Create a dictionary called person with keys 'name', 'age', 'job' and values 'John', 30, 'teacher'.
 2. Print the value corresponding to the 'job' key.
 3. Add a new key-value pair: 'city': 'Paris' to the person dictionary. Print the updated dictionary.
+person|={"city": "Paris"}
 4. Remove the 'age' key-value pair from person. Print the updated dictionary.
 5. Iterate through the person dictionary and print out each key-value pair on a separate line.
 dict[str, int]:
 dict(name=John,age=30,job=teacher)
 dict[key]=value
-def print[key(job)]
-def print[key(job)= teacher
+print[person('job)']
+def print[key(job)]= teacher
 def remove_key=dict[str, int]:
     del dict[age]
 dict(name)
@@ -39,6 +37,8 @@ dict(age)
 dict(age)=30
 dict(job)
 NameError: name 'job' is not defined
+
+
 # -----------------------------------------------------------------------------
 
 
@@ -73,6 +73,10 @@ def count_vowels(s: str) -> int:
     # TODO: Implement this function
     pass
 
+vowels = "aeiouAEIOU"
+for character in s:
+    if character in vowels:
+        count = count + 1
 
 # Unit Tests for count_vowels
 def test_count_vowels():
@@ -93,6 +97,28 @@ def test_count_vowels():
 
 # Function 2: merge_lists
 def merge_lists(list1: list, list2: list) -> list:
+
+if list1[i1] < list2[i2]:
+    merge_list.append(list1[i1])
+    if i1 + 1 == len(list1):
+        for item in list2[i2:]:
+            merged_list.append(item)
+        else:
+            i1 = +1
+
+    else:
+        merged_list.append(list2[i2])
+        if i2 + 1 == len(list2):
+            for item in list[i1:]:
+                merged_list.append(item)
+
+            else:
+                i2 += 1
+        
+        return merged_list
+            
+
+
     """
     Merge two sorted lists into a single sorted list.
 
@@ -135,6 +161,11 @@ def test_word_lengths():
     test(lengths == [7, 4, 6])
     test(word_lengths([]) == [])
     test(word_lengths(["tall"]) == [4])
+
+    list_of_words_lengths = []
+    for happiness in words:
+        list_of_word_lengths.append(len(happiness))
+    return list_of_word_lengths
     
     """
     # TODO: Implement this function
@@ -192,6 +223,12 @@ def intersection(list1: list, list2: list) -> list:
 
     Returns:
     - list: The intersection of the two lists
+intersection_list = []
+for item in list1:
+    if item in list2:
+        intersection_list.append(item)
+    return list(set(intersection_list))
+
     """
     # TODO: Implement this function
     pass
